@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="IconSizes.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IconSizes"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Orientation="Vertical" Padding="20">
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="The default base size of icons in UWP apps is 20x20. Depending on the pixel density of the screen, this can be scaled up and down:" />
+            <TextBlock Text="The default base size of icons in UWP apps is 20x20. Depending on the pixel density of the screen, this can be scaled up and down:" />
+        </StackPanel>
+        <TextBlock Grid.Row="1" Text="Built in icons" Style="{ThemeResource TitleTextBlockStyle}" />
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <AppBarButton Label="Home">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="Home" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Phone">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="CellPhone" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Camera">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="Camera" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </StackPanel>
+        <TextBlock Text="Default Icons8 size 32x32 with padding" Style="{ThemeResource TitleTextBlockStyle}" />
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <AppBarButton Label="Home">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/32padding/home.png" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Phone">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/32padding/phone.png" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Camera">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/32padding/camera.png" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </StackPanel>
+        <TextBlock Text="Default Icons8 size 32x32 without padding" Style="{ThemeResource TitleTextBlockStyle}" />
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <AppBarButton Label="Home">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/32nopadding/home.png" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Phone">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/32nopadding/phone.png" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Camera">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/32nopadding/camera.png" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </StackPanel>
+        <TextBlock Text="Default Icons8 size 20x20 without padding" Style="{ThemeResource TitleTextBlockStyle}" />
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <AppBarButton Label="Home">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/20/home.png" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Phone">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/20/phone.png" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Camera">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/20/camera.png" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </StackPanel>
+    </StackPanel>
+</Page>
+
