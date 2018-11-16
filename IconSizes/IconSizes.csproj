@@ -109,6 +109,7 @@
   <ItemGroup>
     <Content Include="Assets\20\camera.png" />
     <Content Include="Assets\20\home.png" />
+    <Content Include="Assets\20\settings.png" />
     <Content Include="Assets\20\phone.png" />
     <Content Include="Assets\32nopadding\home.png" />
     <Content Include="Assets\32nopadding\camera.png" />

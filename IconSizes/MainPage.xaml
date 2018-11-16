@@ -85,6 +85,19 @@
                 </AppBarButton.Icon>
             </AppBarButton>
         </StackPanel>
+        <TextBlock Text="Home icon system vs. Icons8" />
+        <StackPanel Orientation="Horizontal">
+            <AppBarButton Label="Home (system)">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="Home" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Home (Icons8 20x20)">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="Assets/20/home.png" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </StackPanel>
     </StackPanel>
 </Page>
 
